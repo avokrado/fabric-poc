@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+.sample-canvas {
+  height: 400px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Pen-specific styles */
+html,
+body,
+section {
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Pattern styles */
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.left-half {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.right-half {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.wrapper input[type="text"] {
+  flex: 1 1 auto;
+}
+
+.shirt {
+  margin: "auto";
+  width: "500px";
+  height: "600px";
+  position: "relative";
+  background-color: "rgb(255, 255, 255)";
+}
+
+.button {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #6e6c6c;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+canvas {
+  border: .5px solid black;
 }
